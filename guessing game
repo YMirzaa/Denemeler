@@ -1,0 +1,19 @@
+import random
+guess=0
+a= random.randint(1,9)
+print("if you want to exit type'exit'\n" )
+while True:
+    ans=input('\nGuess a number: ')
+    if ans=='exit':
+        print('you did ' + str(guess)+ ' guesses')
+        break
+    guess +=1
+    ans=int(ans)
+    if ans==a:
+        print('You win!!! New game starting!!!')
+        print('\nYou did ' + str(guess)+ ' guesses')
+        continue
+    elif ans<a :
+        print("too low")
+    elif ans>a :
+        print('too high')
