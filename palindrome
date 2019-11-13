@@ -1,0 +1,4 @@
+user= input('bir yazi giriniz: ')
+if list(user) == list(user[::-1]):
+    print('this is palindrome')
+else: print('this is not polindrome')
