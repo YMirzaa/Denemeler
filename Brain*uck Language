@@ -1,0 +1,7 @@
+s= list(input())
+i=input()
+s[(i.count('>'))] = ord(s[(i.count('>'))]) + (i.count('+'))
+s[(i.count('>'))]=chr(s[(i.count('>'))])
+s[i.count('>') - (i.count('<'))] = ord(s[i.count('>') - (i.count('<'))]) - (i.count('-'))
+s[i.count('>')- (i.count('<'))]=chr(s[i.count('>') - (i.count('<'))])
+print (''.join(s))
