@@ -1,0 +1,8 @@
+url=input()
+para=input()
+index1=url.find('?')
+lala=url.find(para,index1)
+index2=url.find('&',lala)
+b=url[lala : index2].split('=')
+b=b[1]
+print(b)
